@@ -437,7 +437,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 423664704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b7de8b9b4634764280765a70af5a49d, type: 3}
+  m_Script: {fileID: 11500000, guid: d39b653c4441fee4498286e9d01749a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectTag: Interactive
@@ -445,7 +445,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 423664707}
-        m_TargetAssemblyTypeName: Showroom.VideoPlayer.TouchpointVideoSetter, Assembly-CSharp
+        m_TargetAssemblyTypeName: VideoPlayer.TouchpointVideoSetter, Assembly-CSharp
         m_MethodName: PlayVideo
         m_Mode: 1
         m_Arguments:
@@ -460,7 +460,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 423664707}
-        m_TargetAssemblyTypeName: Showroom.VideoPlayer.TouchpointVideoSetter, Assembly-CSharp
+        m_TargetAssemblyTypeName: VideoPlayer.TouchpointVideoSetter, Assembly-CSharp
         m_MethodName: PauseVideo
         m_Mode: 1
         m_Arguments:
@@ -495,13 +495,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 423664704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2214230e11e3452c81055aefd543429b, type: 3}
+  m_Script: {fileID: 11500000, guid: d05f7c461a4b8df4abd29910c5846351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoLoader: {fileID: 1117139133}
+  videoLoader: {fileID: 1117139135}
   videoFileName: LEDs.webm
-  targetTex: {fileID: 8400000, guid: cd2b0174965edfd4886b9719d81fe98c, type: 2}
-  fadeDuration: 0.2
+  targetTex: {fileID: 8400000, guid: 37c5c41da176ec64ebdf40ab67600a8c, type: 2}
+  fadeDuration: 0.5
   fadeEase: 4
   fadeTransparency: 1
   contentWorldObject: {fileID: 1117139131}
@@ -567,7 +567,7 @@ GameObject:
   - component: {fileID: 1117139131}
   - component: {fileID: 1117139130}
   - component: {fileID: 1117139134}
-  - component: {fileID: 1117139133}
+  - component: {fileID: 1117139135}
   m_Layer: 0
   m_Name: VideoProjection
   m_TagString: Interactive
@@ -631,7 +631,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 885f3b281b4343a4b8ba2acfe4c82691, type: 2}
+  - {fileID: 2100000, guid: 7a076ddf462002344ad5823bc00ff639, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -661,18 +661,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117139128}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1117139133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1117139128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1df64643247d3641a6a873498229a7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!328 &1117139134
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -709,6 +697,18 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &1117139135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117139128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db29db60ba514ef44b254043ac258d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1968577365
 GameObject:
   m_ObjectHideFlags: 0
